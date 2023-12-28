@@ -10,4 +10,57 @@
     url(day.png);
   border-radius: 20px;
   background-size: cover;
+  color: #fff;
+  padding: 16px;
+  margin: 30px auto;
+  max-width: 700px;
+  width: 400px;
+  height: 700px;
+}
+.Weather .header {
+  background-color: #b45d004a;
+  border-radius: 110px;
+  margin: auto;
+  width: 210px;
+  height: 210px;
+}
+.Weather h1 {
+  font-size: 60px;
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  padding-top: 50px;
+}
+.Weather .date {
+  text-align: center;
+}
+.Weather input {
+  background-color: rgb(216, 138, 114);
+  border: none;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.temperature {
+  text-align: right;
+  font-size: 55px;
+  font-weight: 300;
+}
+.precipitation {
+  font-size: 25px;
+  font-weight: 200;
+}
+.wind {
+  font-size: 25px;
+  font-weight: 200;
+}
+.description {
+  font-size: 30px;
+  font-weight: 300;
+}
+.Weather .col-6 {
+  padding-top: 30px;
+}
+footer {
+  text-align: center;
 }
