@@ -40,6 +40,9 @@
   opacity: 0.6;
   margin-bottom: 20px;
 }
+.Weather .btn:hover {
+  background-color: rgb(184, 91, 62);
+}
 
 .temperature {
   text-align: right;
