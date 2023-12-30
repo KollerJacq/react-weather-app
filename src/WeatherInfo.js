@@ -2,11 +2,14 @@ import React from "react";
 import FormattedDate from "./formattedDate";
 import WeatherIcon from "./weatherIcon.js";
 import ReactAnimatedWeather from "react-animated-weather";
+import WeatherTemperature from "./weatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="header">
+      <div className="bg-header"></div>
+      <div className="header"></div>
+      <div className="header-text">
         <h1>{props.data.city}</h1>
         <div className="date">
           <FormattedDate date={props.data.date} />
@@ -37,10 +40,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-4">
           <div className="background">
-            <div className="temperature">
-              {Math.round(props.data.temperature)}
-              <span className="degree">°C</span>
-            </div>
+            <WeatherTemperature celsius={props.data.temperature} />
           </div>
         </div>
       </div>

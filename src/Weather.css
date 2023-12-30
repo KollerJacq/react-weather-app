@@ -17,22 +17,40 @@
   width: 400px;
   height: 700px;
 }
-.Weather .header {
+.bg-header {
+  display: flex;
+  background-color: #b45d004a;
+  border-radius: 110px;
+  width: 220px;
+  height: 220px;
+  margin: auto;
+}
+.header {
+  display: flex;
   background-color: #b45d004a;
   border-radius: 110px;
   margin: auto;
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 210px;
+}
+.header-text {
+  position: relative;
+  bottom: 210px;
 }
 .Weather h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   display: block;
   font-weight: 300;
-  padding-top: 50px;
+  padding-top: 20px;
+  margin-top: -160px;
 }
 .Weather .date {
   text-align: center;
+  margin-top: -5px;
+  margin-bottom: -130px;
 }
 .Weather input {
   background-color: rgb(216, 138, 114);
@@ -47,16 +65,23 @@
   text-align: right;
   font-size: 60px;
   font-weight: 300;
-  margin-right: 30px;
+  margin-right: 42px;
 }
-.Weather .degree {
-  font-size: 25px;
+.unit {
+  font-size: 20px;
   display: flex;
-  margin-left: 75px;
+  margin-left: 55px;
   margin-top: -75px;
 }
+.unit a {
+  color: #ffc68d;
+  text-decoration: none;
+}
+.unit a:hover {
+  cursor: pointer;
+}
 .background {
-  background-color: #b45d004a;
+  background-color: #b45d006f;
   border-radius: 110px;
   width: 110px;
   height: 110px;
@@ -79,7 +104,7 @@
   padding: 5px;
 }
 .Weather canvas {
-  background-color: #b45d004a;
+  background-color: #b45d006f;
   border-radius: 110px;
 }
 .Weather .col-8,
