@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./formattedDate";
+import WeatherIcon from "./weatherIcon.js";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,23 +13,34 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
-          <img src="#" alt=""></img>
-          <span className="description">{props.data.description}</span>
+        <div className="col-8">
+          <div className="float-left">
+            <WeatherIcon code={props.data.icon} />
+            <span className="description">{props.data.description}</span>{" "}
+          </div>
           <div>
-            <span className="humidity">
-              <img src="#" alt=""></img>
-              {props.data.humidity}%
-            </span>{" "}
-            <span className="wind">
-              <img src="#" alt=""></img>
-              {Math.round(props.data.wind)}km/h
-            </span>
+            <ReactAnimatedWeather
+              icon="RAIN"
+              color="white"
+              size={40}
+              animate={true}
+            />{" "}
+            <span className="humidity">{props.data.humidity}%</span>{" "}
+            <ReactAnimatedWeather
+              icon="WIND"
+              color="white"
+              size={40}
+              animate={true}
+            />{" "}
+            <span className="wind">{Math.round(props.data.wind)}km/h</span>
           </div>
         </div>
-        <div className="col-6">
-          <div className="temperature">
-            {Math.round(props.data.temperature)}°C
+        <div className="col-4">
+          <div className="background">
+            <div className="temperature">
+              {Math.round(props.data.temperature)}
+              <span className="degree">°C</span>
+            </div>
           </div>
         </div>
       </div>
