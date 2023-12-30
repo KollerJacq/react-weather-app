@@ -67,7 +67,7 @@
 .Weather .date {
   text-align: center;
   margin-top: -5px;
-  margin-bottom: -130px;
+  margin-bottom: -160px;
 }
 .Weather input {
   background-color: rgb(216, 138, 114);
@@ -83,12 +83,13 @@
   font-size: 60px;
   font-weight: 300;
   margin-right: 42px;
+  margin-top: 5px;
 }
 .unit {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   margin-left: 55px;
-  margin-top: -75px;
+  margin-top: -80px;
 }
 .unit a {
   color: #ffc68d;
@@ -114,11 +115,19 @@
   font-weight: 200;
   padding: 2px;
 }
+.humidityWind {
+  position: relative;
+  bottom: 20px;
+}
 .description {
+  display: block;
+  position: relative;
   font-size: 25px;
   font-weight: 300;
   line-height: 0.5;
   padding: 5px;
+  left: 65px;
+  bottom: 40px;
 }
 .Weather canvas {
   background-color: #b45d006f;

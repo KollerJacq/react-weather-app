@@ -1,0 +1,13 @@
+.WeatherForecast {
+  text-align: center;
+}
+.WeatherForecast-day {
+  font-size: 20px;
+}
+.WeatherForecast-temperature-max {
+  font-size: 18px;
+}
+.WeatherForecast-temperature-min {
+  color: #ffc68d;
+  font-size: 18px;
+}

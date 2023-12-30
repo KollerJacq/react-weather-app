@@ -18,10 +18,10 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-8">
           <div className="float-left">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size="58px" />
             <span className="description">{props.data.description}</span>{" "}
           </div>
-          <div>
+          <div className="humidityWind">
             <ReactAnimatedWeather
               icon="RAIN"
               color="white"
